@@ -8,8 +8,7 @@ public class Triangulo {
     }
 
     /**
-     * Verifica se as medidas dos lados satisfazem a condição de existência do triângulo:
-     * Para cada lado: |ladoX - ladoY| < ladoZ < (ladoX + ladoY)
+     * Verifica se as medidas dos lados satisfazem a condição de existência do triângulo
      */
     public boolean existe() {
         return (ladoA < ladoB + ladoC && ladoA > Math.abs(ladoB - ladoC)) &&
@@ -27,7 +26,7 @@ public class Triangulo {
 
     /**
      * Retorna true se o triângulo é isósceles (apenas dois lados iguais) e
-     * se ele existe. Note que um triângulo equilátero não é considerado isósceles.
+     * se ele existe.
      */
     public boolean isIsosceles() {
         return existe() &&
